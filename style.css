@@ -1,0 +1,16 @@
+body {
+    background-color: lightgray;
+}
+
+canvas {
+    opacity: 50%;
+}
+
+#red {
+    background-color: red;
+}
+
+#green {
+    background-color: green;
+}
+
