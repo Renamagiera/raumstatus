@@ -7,7 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<canvas id="testcanvas"></canvas>
+
+<div class="floorplan">
+    <svg viewBox="0 0 1000 600">
+        <!-- Grundriss-Bild im Hintergrund des SVGs einbinden -->
+        <image href="grundriss.png" width="1000" height="600"/>
+
+        <!-- office 2 -->
+        <rect class="defaultRoom" id="room_2" x="402" y="135" width="99" height="145"/>
+        <!-- office 3 -->
+        <rect class="defaultRoom" id="room_3" x="508" y="135" width="99" height="145"/>
+        <!-- office 4 -->
+        <rect class="defaultRoom" id="room_4" x="615" y="135" width="99" height="145"/>
+
+    </svg>
+</div>
 
 </body>
 </html>
