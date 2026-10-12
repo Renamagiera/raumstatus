@@ -7,12 +7,15 @@ setClickEvent();
 // debugging
 showAllClassesOfEveryRoom();
 console.log('local storage size: ' + localStorage.length)
-/*clearLocalStorage();*/
+clearLocalStorage();
 // debugging
 
 function setRoomStatus() {
     for (const room of rooms) {
         if (localStorage.getItem(room.id)) {
+            // funktioniert nur mit cache
+            // hier eine andere Lösung finden, um den status dauerhaft zu speichern
+            // herausfinden, ob die Seite mit cache reload kaputt geht (Stichwort dark mode)
             changeRoomColor(room, localStorage.getItem(room.id));
         }
     }
@@ -68,4 +71,3 @@ function showAllClassesOfEveryRoom() {
         console.log('classlist of ' + room.id + ': ' + room.classList);
     }
 }
-

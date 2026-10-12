@@ -1,5 +1,54 @@
+:root {
+    /* variables */
+    --color-red: red;
+    --color-green: green;
+    --color-gray: gray;
+    --opacity: 40%;
+    --width: 60%
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: white;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    font-family: Arial, "Lucida Console", sans-serif;
+}
+
+header {
+    width: var(--width);
+    color: var(--color-gray);
+}
+
+h4 {
+    font-size: 0.9rem;
+}
+
+.wrapper {
+    border-bottom: 1px solid var(--color-gray);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.linklist {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.linklist p {
+    width: var(--width);
 }
 
 .floorplan {
@@ -8,22 +57,23 @@ body {
 }
 
 .floorplan svg {
-    border: 1px solid magenta;
-    width: 70%;
+    width: var(--width);
+}
+
+.room {
+    stroke: blue;
+    stroke-width: 2px;
 }
 
 .defaultRoom {
     fill: red;
-    opacity: 40%;
 }
 
 .red {
     fill: red;
-    opacity: 40%;
 }
 
 .green {
     fill: green;
-    opacity: 40%;
 }
 
